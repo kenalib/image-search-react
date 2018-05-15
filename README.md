@@ -1,6 +1,8 @@
 
 # Image Search React Web UI
 
+![React Logo](./src/logo.svg)
+
 ## Get Started
 
 * Install Visual Studio Code https://code.visualstudio.com/
