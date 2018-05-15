@@ -1,17 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ImageSearchDemo from './ImageSearchDemo';
+import GitHubCorner from './GitHubCorner';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Image Search Demo</h1>
         </header>
+
+        <GitHubCorner/>
+        <ImageSearchDemo/>
+
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Plase refer the documents for more details.<br/>
+          <code>
+            <a href="https://www.alibabacloud.com/help/doc-detail/71238.htm"
+              target="_blank" rel="noopener noreferrer">
+              https://www.alibabacloud.com/help/doc-detail/71238.htm
+            </a>
+          </code>
         </p>
       </div>
     );
