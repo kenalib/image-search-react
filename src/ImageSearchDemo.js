@@ -3,17 +3,8 @@ import Paper from 'material-ui/Paper';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
 import axios from 'axios';
+import constants from './Constants';
 
-const hostname = window.location.hostname;
-let api_url;
-
-if (hostname === "localhost" || hostname === "127.0.0.1") {
-  api_url = "http://localhost:8080/image-search-webapp/search_picture";
-} else {
-  api_url = "http://47.74.255.52/image-search-webapp/search_picture";
-}
-
-const oss_url = "http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/";
 const flexContainer = {
   display: "flex",
   flexWrap: "wrap",
@@ -30,7 +21,7 @@ function FlexBox(props) {
   return (
     <div style={flexItem}>
       <Paper>
-        <img src={oss_url + props.item.picName} alt={""}/>
+        <img src={constants.oss_url + props.item.picName} alt={""}/>
         <Typography gutterBottom variant="headline" component="h2">
           {props.item.picName}
         </Typography>
@@ -54,7 +45,7 @@ class ImageSearchDemo extends Component {
   }
 
   componentDidMount() {
-    fetch(api_url)
+    fetch(constants.api_url)
       .then(res => res.json())
       .then(
         (result) => {
@@ -67,10 +58,11 @@ class ImageSearchDemo extends Component {
         // instead of a catch() block so that we don't swallow
         // exceptions from actual bugs in components.
         (error) => {
-          console.log("ERR: connect api_url");
+          console.log("ERR connect api_url: " + error.message);
+
           this.setState({
             isLoaded: true,
-            error
+            items: constants.default_result
           });
         }
       )
@@ -88,11 +80,12 @@ class ImageSearchDemo extends Component {
     const formData = new FormData();
     formData.append('file_name', this.state.selectedFile, this.state.selectedFile.name);
 
-    axios.post(api_url, formData).then(response => {
+    axios.post(constants.api_url, formData).then(response => {
       this.setState((prevState, props) => {
         return { items: response.data.Auctions };
       });
     }).catch(err => {
+      console.log("ERR: Service Suspended");
       console.log(err);
     });
   }

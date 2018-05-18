@@ -3,6 +3,10 @@
 
 ![React Logo](./src/logo.svg)
 
+## Sample page
+
+* http://image-search-demo3.oss-ap-northeast-1.aliyuncs.com/
+
 ## Get Started
 
 * Install Visual Studio Code https://code.visualstudio.com/
@@ -12,7 +16,6 @@
 * Tasks | Run Task | npm start to start
 * Tasks | Run Task | npm build to make build
 * Copy files in build directory to your server
-* Sample page http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/
 
 ## Java API
 
