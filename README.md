@@ -6,6 +6,7 @@
 ## Sample page
 
 * http://image-search-demo3.oss-ap-northeast-1.aliyuncs.com/
+* (This is just UI for demo, the backend API service maybe suspended.)
 
 ## Get Started
 
