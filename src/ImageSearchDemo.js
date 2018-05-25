@@ -6,6 +6,7 @@ import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
+import Watning from '@material-ui/icons/Warning';
 import axios from 'axios';
 import constants from './Constants';
 
@@ -27,6 +28,12 @@ const formControl = {
   margin: "30px",
   minWidth: "200px",
 };
+const previewImgStyle = {
+  maxWidth: '150px',
+  maxHeight: '100px',
+  margin: '20px',
+  verticalAlign:'middle',
+}
 
 function FlexBox(props) {
   return (
@@ -52,6 +59,7 @@ class ImageSearchDemo extends Component {
       isLoaded: false,
       items: [],
       selectedFile: null,
+      imgSrc: "",
       cat_id: "",
     }
   }
@@ -81,7 +89,25 @@ class ImageSearchDemo extends Component {
   }
 
   fileChangedHandler = (event) => {
-    this.setState({selectedFile: event.target.files[0]});
+    const file = event.target.files[0];
+
+    if (!file) {
+      console.log("ERR: empty file");
+      return;
+    }
+
+    const reader  = new FileReader();
+    reader.onloadend = () => {
+      this.setState({
+          imgSrc: reader.result
+      })
+    }
+
+    reader.readAsDataURL(file);
+
+    this.setState({selectedFile: file}, () => {
+      this.uploadHandler();
+    });
   }
 
   catChangeHandler = (event) => {
@@ -119,11 +145,11 @@ class ImageSearchDemo extends Component {
     } else {
       return (
         <div>
-          <Button variant="raised" label='My Label'>
+          <img src={this.state.imgSrc} alt="" style={previewImgStyle}/>
+
+          <Button variant="raised" label='Upload Image'>
             <input type="file" onChange={this.fileChangedHandler}/>
           </Button>
-          <Button  variant="raised"
-            onClick={this.uploadHandler}>Upload!</Button>
 
           <FormControl style={formControl}>
             <InputLabel htmlFor="category-simple">Category</InputLabel>
@@ -135,6 +161,12 @@ class ImageSearchDemo extends Component {
               ))}
             </Select>
           </FormControl>
+
+          {items.length === 0 ?
+            <div>
+              <Watning style={{color: 'orange', marginRight: '5px'}}/>
+              Found zero image.
+            </div> : ""}
 
           <div style={flexContainer}>
             {items.map(item => (
