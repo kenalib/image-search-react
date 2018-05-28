@@ -128,7 +128,10 @@ class ImageSearchDemo extends Component {
 
     axios.post(constants.api_url, formData).then(response => {
       this.setState((prevState, props) => {
-        return { items: response.data.SearchItemResponse.auctions };
+        return {
+          items: response.data.SearchItemResponse.auctions,
+          cat_id: response.data.SearchItemResponse.picInfo.category
+        };
       });
     }).catch(err => {
       console.log("ERR: Service Suspended");
