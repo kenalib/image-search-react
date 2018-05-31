@@ -17,9 +17,9 @@ class App extends Component {
         <p className="App-intro">
           Plase refer the documents for more details.<br/>
           <code>
-            <a href="https://www.alibabacloud.com/help/doc-detail/71238.htm"
+            <a href="https://www.alibabacloud.com/product/imagesearch"
               target="_blank" rel="noopener noreferrer">
-              https://www.alibabacloud.com/help/doc-detail/71238.htm
+              https://www.alibabacloud.com/product/imagesearch
             </a>
           </code>
         </p>

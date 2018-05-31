@@ -159,6 +159,8 @@ class ImageSearchDemo extends Component {
             </Select>
           </FormControl>
 
+          <div>Demo Data in 1: Dress, 3: Bag, 4: Shoes</div>
+
           {items.length === 0 ?
             <div>
               <Watning style={{color: 'orange', marginRight: '5px'}}/>
