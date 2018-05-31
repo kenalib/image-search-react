@@ -65,27 +65,21 @@ class ImageSearchDemo extends Component {
   }
 
   componentDidMount() {
-    fetch(constants.api_url)
-      .then(res => res.json())
-      .then(
-        (result) => {
-          this.setState({
-            isLoaded: true,
-            items: result.SearchItemResponse.auctions
-          });
-        },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
-        (error) => {
-          console.log("ERR connect api_url: " + error.message);
+    axios.get(constants.api_url, { timeout : 3000 })
+      .then((response) => {
+        this.setState({
+          isLoaded: true,
+          items: response.data.SearchItemResponse.auctions
+        });
+      })
+      .catch((error) => {
+        console.log("ERR connect api_url: " + error.message);
 
-          this.setState({
-            isLoaded: true,
-            items: constants.default_result.SearchItemResponse.auctions
-          });
-        }
-      )
+        this.setState({
+          isLoaded: true,
+          items: constants.default_result.SearchItemResponse.auctions
+        });
+      })
   }
 
   fileChangedHandler = (event) => {
@@ -168,7 +162,7 @@ class ImageSearchDemo extends Component {
           {items.length === 0 ?
             <div>
               <Watning style={{color: 'orange', marginRight: '5px'}}/>
-              Found zero image.
+              Found zero image. Please try different category.
             </div> : ""}
 
           <div style={flexContainer}>
