@@ -135,7 +135,7 @@ class ImageSearchDemo extends Component {
             cat_id: "",
             error: {message: res.message}
           }
-        };
+        }
       });
     }).catch(err => {
       console.log("ERR: Service Suspended");
