@@ -121,10 +121,20 @@ class ImageSearchDemo extends Component {
     formData.append('cat_id', this.state.cat_id);
 
     axios.post(constants.api_url, formData).then(response => {
+      const res = response.data.SearchItemResponse;
       this.setState((prevState, props) => {
-        return {
-          items: response.data.SearchItemResponse.auctions,
-          cat_id: response.data.SearchItemResponse.picInfo.category
+        if (res.success) {
+          return {
+            items: res.auctions,
+            cat_id: res.picInfo.category,
+            error: null
+          };
+        } else {
+          return {
+            items: [],
+            cat_id: "",
+            error: {message: res.message}
+          }
         };
       });
     }).catch(err => {
@@ -135,9 +145,7 @@ class ImageSearchDemo extends Component {
 
   render() {
     const { error, isLoaded, items } = this.state;
-    if (error) {
-      return <div>Error: {error.message}</div>;
-    } else if (!isLoaded) {
+    if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
       return (
@@ -159,9 +167,13 @@ class ImageSearchDemo extends Component {
             </Select>
           </FormControl>
 
-          <div>Demo Data in 1: Dress, 3: Bag, 4: Shoes</div>
+          <div>Note: demo data in 1: Dress, 3: Bag, 4: Shoes</div>
 
-          {items.length === 0 ?
+          {error ?
+            <pre>Error: {error.message}</pre>: ""
+          }
+
+          {!error && items.length === 0 ?
             <div>
               <Watning style={{color: 'orange', marginRight: '5px'}}/>
               Found zero image. Please try different category.
