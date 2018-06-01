@@ -140,6 +140,11 @@ class ImageSearchDemo extends Component {
     }).catch(err => {
       console.log("ERR: Service Suspended");
       console.log(err);
+      this.setState((prevState, props) => {
+        return {
+          error: {message: err.message}
+        }
+      });
     });
   }
 
