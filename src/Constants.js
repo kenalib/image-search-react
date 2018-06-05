@@ -1,18 +1,6 @@
 
 let constants = {};
 
-let api_url;
-const hostname = window.location.hostname;
-
-if (hostname === "localhost" || hostname === "127.0.0.1") {
-  api_url = "http://localhost:8080/image-search-webapp/search_picture";
-} else {
-  api_url = "http://47.74.213.82/image-search-webapp/search_picture";
-}
-
-constants.api_url = api_url;
-constants.oss_url = "http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/";
-
 constants.default_result = {
   "SearchItemResponse": {
     "requestId": "C84D2D93-17C5-4DBD-8C08-C2F24D6EC32C",

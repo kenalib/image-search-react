@@ -39,11 +39,14 @@ const warningStyle = {
   marginRight: '5px',
 }
 
+const api_url = process.env.REACT_APP_API_URL;
+const oss_url = process.env.REACT_APP_OSS_URL;
+
 function FlexBox(props) {
   return (
     <div style={flexItem}>
       <Paper>
-        <img src={constants.oss_url + props.item.picName} alt={""} style={imageStyle}/>
+        <img src={oss_url + props.item.picName} alt={""} style={imageStyle}/>
         <Typography gutterBottom variant="headline" component="h2">
           {props.item.picName}
         </Typography>
@@ -70,7 +73,7 @@ class ImageSearchDemo extends Component {
   }
 
   componentDidMount() {
-    axios.get(constants.api_url, { timeout : 3000 })
+    axios.get(api_url, { timeout : 3000 })
       .then((response) => {
         this.setState({
           isLoaded: true,
@@ -125,7 +128,7 @@ class ImageSearchDemo extends Component {
     formData.append('file_name', this.state.selectedFile, this.state.selectedFile.name);
     formData.append('cat_id', this.state.cat_id);
 
-    axios.post(constants.api_url, formData).then(response => {
+    axios.post(api_url, formData).then(response => {
       const res = response.data.SearchItemResponse;
       this.setState((prevState, props) => {
         if (res.success) {
