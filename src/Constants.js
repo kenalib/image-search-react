@@ -126,6 +126,119 @@ constants.default_result = {
   }
 };
 
+constants.shoes_search_result = {
+  "SearchItemResponse": {
+    "requestId": "941BDC1F-6B10-490D-81AA-9F9E20FE9682",
+    "success": true,
+    "message": "success",
+    "code": 0,
+    "auctions": [
+      {
+        "custContent": "k1:v1,k2:v2,k3:v3",
+        "itemId": "1011",
+        "sortExprValues": "5.37633353624177e+24;0",
+        "catId": "4",
+        "picName": "shoes01.jpg"
+      },
+      {
+        "custContent": "k1:v1,k2:v2,k3:v3",
+        "itemId": "1013",
+        "sortExprValues": "2.90890407562256;234",
+        "catId": "4",
+        "picName": "shoes03.jpg"
+      },
+      {
+        "custContent": "k1:v1,k2:v2,k3:v3",
+        "itemId": "1015",
+        "sortExprValues": "2.779137134552;243",
+        "catId": "4",
+        "picName": "shoes05.jpg"
+      },
+      {
+        "custContent": "k1:v1,k2:v2,k3:v3",
+        "itemId": "1014",
+        "sortExprValues": "2.72145915031433;268",
+        "catId": "4",
+        "picName": "shoes04.jpg"
+      },
+      {
+        "custContent": "k1:v1,k2:v2,k3:v3",
+        "itemId": "1012",
+        "sortExprValues": "2.70307874679565;264",
+        "catId": "4",
+        "picName": "shoes02.jpg"
+      }
+    ],
+    "head": {
+      "searchTime": 81,
+      "docsFound": 5,
+      "docsReturn": 5
+    },
+    "picInfo": {
+      "category": "4",
+      "region": "2,202,120,237",
+      "allCategory": [
+        {
+          "name": "Tops",
+          "id": "0"
+        },
+        {
+          "name": "Dress",
+          "id": "1"
+        },
+        {
+          "name": "Bottoms",
+          "id": "2"
+        },
+        {
+          "name": "Bag",
+          "id": "3"
+        },
+        {
+          "name": "Shoes",
+          "id": "4"
+        },
+        {
+          "name": "Accessories",
+          "id": "5"
+        },
+        {
+          "name": "Snack",
+          "id": "6"
+        },
+        {
+          "name": "Makeup",
+          "id": "7"
+        },
+        {
+          "name": "Bottle",
+          "id": "8"
+        },
+        {
+          "name": "Furniture",
+          "id": "9"
+        },
+        {
+          "name": "Toy",
+          "id": "20"
+        },
+        {
+          "name": "Underwear",
+          "id": "21"
+        },
+        {
+          "name": "Digital device",
+          "id": "22"
+        },
+        {
+          "name": "Other",
+          "id": "88888888"
+        }
+      ]
+    }
+  }
+}
+
 constants.allCategory = constants.default_result.SearchItemResponse.picInfo.allCategory
 
 export default constants

@@ -6,7 +6,7 @@ import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
-import Watning from '@material-ui/icons/Warning';
+import Warning from '@material-ui/icons/Warning';
 import axios from 'axios';
 import constants from './Constants';
 
@@ -33,6 +33,10 @@ const previewImgStyle = {
   maxHeight: '100px',
   margin: '20px',
   verticalAlign:'middle',
+}
+const warningStyle = {
+  color: 'orange',
+  marginRight: '5px',
 }
 
 function FlexBox(props) {
@@ -61,6 +65,7 @@ class ImageSearchDemo extends Component {
       selectedFile: null,
       imgSrc: "",
       cat_id: "",
+      auto_detected: false,
     }
   }
 
@@ -127,7 +132,8 @@ class ImageSearchDemo extends Component {
           return {
             items: res.auctions,
             cat_id: res.picInfo.category,
-            error: null
+            error: null,
+            auto_detected: prevState.cat_id !== res.picInfo.category,
           };
         } else {
           return {
@@ -178,11 +184,21 @@ class ImageSearchDemo extends Component {
             <pre>Error: {error.message}</pre>: ""
           }
 
+          {this.state.auto_detected ?
+            <div>
+              <pre>
+                <Warning style={warningStyle}/>
+                Category auto detected
+              </pre>
+            </div>: ""
+          }
+
           {!error && items.length === 0 ?
             <div>
-              <Watning style={{color: 'orange', marginRight: '5px'}}/>
+              <Warning style={warningStyle}/>
               Found zero image. Please try different category.
-            </div> : ""}
+            </div> : ""
+          }
 
           <div style={flexContainer}>
             {items.map(item => (

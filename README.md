@@ -22,6 +22,8 @@
 * run `code .` to open the directory
 * Tasks | Run Task | npm start to start
 * Tasks | Run Task | npm test to test
+* Tasks | Run Task | npm test:coverage to test with coverage
+* `open coverage/lcov-report/index.html` to see the coverage report
 * Tasks | Run Task | npm build to make build
 * Copy files in build directory to your server
 
