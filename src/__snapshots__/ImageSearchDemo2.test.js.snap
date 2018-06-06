@@ -1,0 +1,463 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookList snapshot test 1`] = `
+<div>
+  <img
+    alt=""
+    className="previewImgStyle"
+    src=""
+  />
+  <WithStyles(Button)
+    label="Upload Image"
+    variant="raised"
+  >
+    <input
+      onChange={[Function]}
+      type="file"
+    />
+  </WithStyles(Button)>
+  <WithStyles(FormControl)
+    style={
+      Object {
+        "marginLeft": "30px",
+        "minWidth": "200px",
+      }
+    }
+  >
+    <WithStyles(InputLabel)
+      htmlFor="category-simple"
+    >
+      Category
+    </WithStyles(InputLabel)>
+    <WithStyles(Select)
+      inputProps={
+        Object {
+          "id": "category-simple",
+          "name": "cat_id",
+        }
+      }
+      onChange={[Function]}
+      value=""
+    >
+      <WithStyles(MenuItem)
+        key="0"
+        value=""
+      >
+        Not Specified
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="0"
+        value="0"
+      >
+        0
+        : 
+        Tops
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="1"
+        value="1"
+      >
+        1
+        : 
+        Dress
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="2"
+        value="2"
+      >
+        2
+        : 
+        Bottoms
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="3"
+        value="3"
+      >
+        3
+        : 
+        Bag
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="4"
+        value="4"
+      >
+        4
+        : 
+        Shoes
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="5"
+        value="5"
+      >
+        5
+        : 
+        Accessories
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="6"
+        value="6"
+      >
+        6
+        : 
+        Snack
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="7"
+        value="7"
+      >
+        7
+        : 
+        Makeup
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="8"
+        value="8"
+      >
+        8
+        : 
+        Bottle
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="9"
+        value="9"
+      >
+        9
+        : 
+        Furniture
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="20"
+        value="20"
+      >
+        20
+        : 
+        Toy
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="21"
+        value="21"
+      >
+        21
+        : 
+        Underwear
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="22"
+        value="22"
+      >
+        22
+        : 
+        Digital device
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="88888888"
+        value="88888888"
+      >
+        88888888
+        : 
+        Other
+      </WithStyles(MenuItem)>
+    </WithStyles(Select)>
+  </WithStyles(FormControl)>
+  <div>
+    Note: demo data in 1: Dress, 3: Bag, 4: Shoes
+  </div>
+  <div
+    className="flexContainer"
+  >
+    <FlexBox
+      item={
+        Object {
+          "catId": "3",
+          "custContent": "k1:v1,k2:v2,k3:v3",
+          "itemId": "1007",
+          "picName": "bag02.jpg",
+          "sortExprValues": "5.37633353624177e+24;0",
+        }
+      }
+      key="bag02.jpg"
+    />
+    <FlexBox
+      item={
+        Object {
+          "catId": "3",
+          "custContent": "k1:v1,k2:v2,k3:v3",
+          "itemId": "1010",
+          "picName": "bag05.jpg",
+          "sortExprValues": "3.37476205825806;225",
+        }
+      }
+      key="bag05.jpg"
+    />
+    <FlexBox
+      item={
+        Object {
+          "catId": "3",
+          "custContent": "k1:v1,k2:v2,k3:v3",
+          "itemId": "1009",
+          "picName": "bag04.jpg",
+          "sortExprValues": "3.29809403419495;219",
+        }
+      }
+      key="bag04.jpg"
+    />
+    <FlexBox
+      item={
+        Object {
+          "catId": "3",
+          "custContent": "k1:v1,k2:v2,k3:v3",
+          "itemId": "1006",
+          "picName": "bag01.jpg",
+          "sortExprValues": "2.99806690216064;242",
+        }
+      }
+      key="bag01.jpg"
+    />
+    <FlexBox
+      item={
+        Object {
+          "catId": "3",
+          "custContent": "k1:v1,k2:v2,k3:v3",
+          "itemId": "1008",
+          "picName": "bag03.jpg",
+          "sortExprValues": "2.84266543388367;233",
+        }
+      }
+      key="bag03.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`BookList snapshot test 2`] = `
+<div>
+  <img
+    alt=""
+    className="previewImgStyle"
+    src="data:text/plain;charset=undefined,dummy"
+  />
+  <WithStyles(Button)
+    label="Upload Image"
+    variant="raised"
+  >
+    <input
+      onChange={[Function]}
+      type="file"
+    />
+  </WithStyles(Button)>
+  <WithStyles(FormControl)
+    style={
+      Object {
+        "marginLeft": "30px",
+        "minWidth": "200px",
+      }
+    }
+  >
+    <WithStyles(InputLabel)
+      htmlFor="category-simple"
+    >
+      Category
+    </WithStyles(InputLabel)>
+    <WithStyles(Select)
+      inputProps={
+        Object {
+          "id": "category-simple",
+          "name": "cat_id",
+        }
+      }
+      onChange={[Function]}
+      value=""
+    >
+      <WithStyles(MenuItem)
+        key="0"
+        value=""
+      >
+        Not Specified
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="0"
+        value="0"
+      >
+        0
+        : 
+        Tops
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="1"
+        value="1"
+      >
+        1
+        : 
+        Dress
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="2"
+        value="2"
+      >
+        2
+        : 
+        Bottoms
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="3"
+        value="3"
+      >
+        3
+        : 
+        Bag
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="4"
+        value="4"
+      >
+        4
+        : 
+        Shoes
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="5"
+        value="5"
+      >
+        5
+        : 
+        Accessories
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="6"
+        value="6"
+      >
+        6
+        : 
+        Snack
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="7"
+        value="7"
+      >
+        7
+        : 
+        Makeup
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="8"
+        value="8"
+      >
+        8
+        : 
+        Bottle
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="9"
+        value="9"
+      >
+        9
+        : 
+        Furniture
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="20"
+        value="20"
+      >
+        20
+        : 
+        Toy
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="21"
+        value="21"
+      >
+        21
+        : 
+        Underwear
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="22"
+        value="22"
+      >
+        22
+        : 
+        Digital device
+      </WithStyles(MenuItem)>
+      <WithStyles(MenuItem)
+        key="88888888"
+        value="88888888"
+      >
+        88888888
+        : 
+        Other
+      </WithStyles(MenuItem)>
+    </WithStyles(Select)>
+  </WithStyles(FormControl)>
+  <div>
+    Note: demo data in 1: Dress, 3: Bag, 4: Shoes
+  </div>
+  <pre>
+    Error: 
+    Network Error
+  </pre>
+  <div
+    className="flexContainer"
+  >
+    <FlexBox
+      item={
+        Object {
+          "catId": "3",
+          "custContent": "k1:v1,k2:v2,k3:v3",
+          "itemId": "1007",
+          "picName": "bag02.jpg",
+          "sortExprValues": "5.37633353624177e+24;0",
+        }
+      }
+      key="bag02.jpg"
+    />
+    <FlexBox
+      item={
+        Object {
+          "catId": "3",
+          "custContent": "k1:v1,k2:v2,k3:v3",
+          "itemId": "1010",
+          "picName": "bag05.jpg",
+          "sortExprValues": "3.37476205825806;225",
+        }
+      }
+      key="bag05.jpg"
+    />
+    <FlexBox
+      item={
+        Object {
+          "catId": "3",
+          "custContent": "k1:v1,k2:v2,k3:v3",
+          "itemId": "1009",
+          "picName": "bag04.jpg",
+          "sortExprValues": "3.29809403419495;219",
+        }
+      }
+      key="bag04.jpg"
+    />
+    <FlexBox
+      item={
+        Object {
+          "catId": "3",
+          "custContent": "k1:v1,k2:v2,k3:v3",
+          "itemId": "1006",
+          "picName": "bag01.jpg",
+          "sortExprValues": "2.99806690216064;242",
+        }
+      }
+      key="bag01.jpg"
+    />
+    <FlexBox
+      item={
+        Object {
+          "catId": "3",
+          "custContent": "k1:v1,k2:v2,k3:v3",
+          "itemId": "1008",
+          "picName": "bag03.jpg",
+          "sortExprValues": "2.84266543388367;233",
+        }
+      }
+      key="bag03.jpg"
+    />
+  </div>
+</div>
+`;
