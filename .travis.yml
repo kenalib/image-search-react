@@ -6,7 +6,6 @@ cache:
     - node_modules
 install:
   - eval "$(gimme 1.10)"
-  - mkdir $GOPATH
   - go get -u github.com/aliyun/aliyun-cli
 script:
   - npm run build
