@@ -76,6 +76,7 @@ class ImageSearchDemo extends Component {
     axios.get(api_url, { timeout : 3000 })
       .then((response) => {
         this.setState({
+          error: null,
           isLoaded: true,
           items: response.data.SearchItemResponse.auctions
         });
@@ -84,6 +85,7 @@ class ImageSearchDemo extends Component {
         console.log("ERR connect api_url: " + error.message);
 
         this.setState({
+          error: {message: error.message},
           isLoaded: true,
           items: constants.default_result.SearchItemResponse.auctions
         });
@@ -174,7 +176,7 @@ class ImageSearchDemo extends Component {
             <InputLabel htmlFor="category-simple">Category</InputLabel>
             <Select value={this.state.cat_id} onChange={this.catChangeHandler}
               inputProps={{name: 'cat_id', id: 'category-simple',}}>
-              <MenuItem value="">Not Specified</MenuItem>
+              <MenuItem value="" key="0">Not Specified</MenuItem>
               {constants.allCategory.map(item => (
                 <MenuItem value={item.id} key={item.id}>{item.id}: {item.name}</MenuItem>
               ))}
@@ -196,7 +198,7 @@ class ImageSearchDemo extends Component {
             </div>: ""
           }
 
-          {!error && items.length === 0 ?
+          {!error && items && items.length === 0 ?
             <div>
               <Warning style={warningStyle}/>
               Found zero image. Please try different category.
