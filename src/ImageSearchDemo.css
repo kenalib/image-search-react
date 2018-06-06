@@ -1,0 +1,35 @@
+
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  padding: 0px 50px;
+}
+
+.flexItem {
+  width: 300px;
+  height: auto;
+  margin: 20px;
+}
+
+.image {
+  max-width: 240px;
+  margin: 20px;
+}
+
+.previewImgStyle {
+  max-width: 150px;
+  max-height: 100px;
+  margin: 20px;
+  vertical-align: middle;
+}
+
+infoStyle {
+  color: deepskyblue;
+  margin-right: 5px;
+}
+
+warningStyle {
+  color: orange;
+  margin-right: 5px;
+}

@@ -6,47 +6,20 @@ import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
+import Info from '@material-ui/icons/Info';
 import Warning from '@material-ui/icons/Warning';
 import axios from 'axios';
 import constants from './Constants';
-
-const flexContainer = {
-  display: "flex",
-  flexWrap: "wrap",
-  margin: "50px auto",
-  padding: "0px 50px",
-}
-const flexItem = {
-  width: "300px",
-  height: "auto",
-  margin: "20px",
-}
-const imageStyle = {
-  maxWidth: "240px",
-}
-const formControl = {
-  margin: "30px",
-  minWidth: "200px",
-};
-const previewImgStyle = {
-  maxWidth: '150px',
-  maxHeight: '100px',
-  margin: '20px',
-  verticalAlign:'middle',
-}
-const warningStyle = {
-  color: 'orange',
-  marginRight: '5px',
-}
+import './ImageSearchDemo.css';
 
 const api_url = process.env.REACT_APP_API_URL;
 const oss_url = process.env.REACT_APP_OSS_URL;
 
 function FlexBox(props) {
   return (
-    <div style={flexItem}>
+    <div className="flexItem">
       <Paper>
-        <img src={oss_url + props.item.picName} alt={""} style={imageStyle}/>
+        <img src={oss_url + props.item.picName} alt={""} className="image"/>
         <Typography gutterBottom variant="headline" component="h2">
           {props.item.picName}
         </Typography>
@@ -166,13 +139,13 @@ class ImageSearchDemo extends Component {
     } else {
       return (
         <div>
-          <img src={this.state.imgSrc} alt="" style={previewImgStyle}/>
+          <img src={this.state.imgSrc} alt="" className="previewImgStyle"/>
 
           <Button variant="raised" label='Upload Image'>
             <input type="file" onChange={this.fileChangedHandler}/>
           </Button>
 
-          <FormControl style={formControl}>
+          <FormControl style={{minWidth:"200px", marginLeft:"30px"}}>
             <InputLabel htmlFor="category-simple">Category</InputLabel>
             <Select value={this.state.cat_id} onChange={this.catChangeHandler}
               inputProps={{name: 'cat_id', id: 'category-simple',}}>
@@ -192,7 +165,7 @@ class ImageSearchDemo extends Component {
           {this.state.auto_detected ?
             <div>
               <pre>
-                <Warning style={warningStyle}/>
+                <Info className="infoStyle"/>
                 Category auto detected
               </pre>
             </div>: ""
@@ -200,12 +173,12 @@ class ImageSearchDemo extends Component {
 
           {!error && items && items.length === 0 ?
             <div>
-              <Warning style={warningStyle}/>
+              <Warning className="warningStyle"/>
               Found zero image. Please try different category.
             </div> : ""
           }
 
-          <div style={flexContainer}>
+          <div className="flexContainer">
             {items.map(item => (
               <FlexBox item={item} key={item.picName}/>
             ))}
