@@ -5,9 +5,9 @@ cache:
   directories:
     - node_modules
 install:
-  - gimme stable
+  - sudo gimme stable
   - gimme list
-  - export PATH=$HOME/gopath/bin:$PATH
+  - export PATH=$GOPATH/bin:$PATH
   - mkdir -p $GOPATH/src/github.com/aliyun
   - cd $GOPATH/src/github.com/aliyun
   - git clone http://github.com/aliyun/aliyun-cli.git
