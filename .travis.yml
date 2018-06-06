@@ -11,7 +11,7 @@ install:
   - git clone http://github.com/aliyun/aliyun-cli.git
   - git clone http://github.com/aliyun/aliyun-openapi-meta.git
   - cd aliyun-cli
-  - make install
+  - sudo make install
 script:
   - npm run build
   - npm test
