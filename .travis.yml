@@ -5,15 +5,9 @@ cache:
   directories:
     - node_modules
 install:
-  - sudo gimme stable
-  - gimme list
-  - export PATH=$GOPATH/bin:$PATH
-  - mkdir -p $GOPATH/src/github.com/aliyun
-  - cd $GOPATH/src/github.com/aliyun
-  - git clone http://github.com/aliyun/aliyun-cli.git
-  - git clone http://github.com/aliyun/aliyun-openapi-meta.git
-  - cd aliyun-cli
-  - sudo make install
+  - tar xvzf $TRAVIS_BUILD_DIR/bin/aliyun-cli-linux-3.0.2-amd64.tgz -C $TRAVIS_BUILD_DIR/bin/
+  - export PATH=$TRAVIS_BUILD_DIR/bin:$PATH
+  - aliyun version
 script:
   - npm run build
   - npm test
