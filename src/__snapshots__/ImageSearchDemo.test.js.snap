@@ -5,15 +5,8 @@ exports[`renders images from API 1`] = `
   <div>
     <img
       alt=""
+      className="previewImgStyle"
       src=""
-      style={
-        Object {
-          "margin": "20px",
-          "maxHeight": "100px",
-          "maxWidth": "150px",
-          "verticalAlign": "middle",
-        }
-      }
     />
     <WithStyles(Button)
       label="Upload Image"
@@ -149,7 +142,7 @@ exports[`renders images from API 1`] = `
     <WithStyles(FormControl)
       style={
         Object {
-          "margin": "30px",
+          "marginLeft": "30px",
           "minWidth": "200px",
         }
       }
@@ -171,7 +164,7 @@ exports[`renders images from API 1`] = `
         required={false}
         style={
           Object {
-            "margin": "30px",
+            "marginLeft": "30px",
             "minWidth": "200px",
           }
         }
@@ -182,7 +175,7 @@ exports[`renders images from API 1`] = `
           onFocus={[Function]}
           style={
             Object {
-              "margin": "30px",
+              "marginLeft": "30px",
               "minWidth": "200px",
             }
           }
@@ -1137,14 +1130,7 @@ exports[`renders images from API 1`] = `
       Note: demo data in 1: Dress, 3: Bag, 4: Shoes
     </div>
     <div
-      style={
-        Object {
-          "display": "flex",
-          "flexWrap": "wrap",
-          "margin": "50px auto",
-          "padding": "0px 50px",
-        }
-      }
+      className="flexContainer"
     >
       <FlexBox
         item={
@@ -1159,13 +1145,7 @@ exports[`renders images from API 1`] = `
         key="bag02.jpg"
       >
         <div
-          style={
-            Object {
-              "height": "auto",
-              "margin": "20px",
-              "width": "300px",
-            }
-          }
+          className="flexItem"
         >
           <WithStyles(Paper)>
             <Paper
@@ -1209,12 +1189,8 @@ exports[`renders images from API 1`] = `
               >
                 <img
                   alt=""
+                  className="image"
                   src="http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/bag02.jpg"
-                  style={
-                    Object {
-                      "maxWidth": "240px",
-                    }
-                  }
                 />
                 <WithStyles(Typography)
                   component="h2"
@@ -1356,13 +1332,7 @@ exports[`renders images from API 1`] = `
         key="bag05.jpg"
       >
         <div
-          style={
-            Object {
-              "height": "auto",
-              "margin": "20px",
-              "width": "300px",
-            }
-          }
+          className="flexItem"
         >
           <WithStyles(Paper)>
             <Paper
@@ -1406,12 +1376,8 @@ exports[`renders images from API 1`] = `
               >
                 <img
                   alt=""
+                  className="image"
                   src="http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/bag05.jpg"
-                  style={
-                    Object {
-                      "maxWidth": "240px",
-                    }
-                  }
                 />
                 <WithStyles(Typography)
                   component="h2"
@@ -1553,13 +1519,7 @@ exports[`renders images from API 1`] = `
         key="bag04.jpg"
       >
         <div
-          style={
-            Object {
-              "height": "auto",
-              "margin": "20px",
-              "width": "300px",
-            }
-          }
+          className="flexItem"
         >
           <WithStyles(Paper)>
             <Paper
@@ -1603,12 +1563,8 @@ exports[`renders images from API 1`] = `
               >
                 <img
                   alt=""
+                  className="image"
                   src="http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/bag04.jpg"
-                  style={
-                    Object {
-                      "maxWidth": "240px",
-                    }
-                  }
                 />
                 <WithStyles(Typography)
                   component="h2"
@@ -1750,13 +1706,7 @@ exports[`renders images from API 1`] = `
         key="bag01.jpg"
       >
         <div
-          style={
-            Object {
-              "height": "auto",
-              "margin": "20px",
-              "width": "300px",
-            }
-          }
+          className="flexItem"
         >
           <WithStyles(Paper)>
             <Paper
@@ -1800,12 +1750,8 @@ exports[`renders images from API 1`] = `
               >
                 <img
                   alt=""
+                  className="image"
                   src="http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/bag01.jpg"
-                  style={
-                    Object {
-                      "maxWidth": "240px",
-                    }
-                  }
                 />
                 <WithStyles(Typography)
                   component="h2"
@@ -1947,13 +1893,7 @@ exports[`renders images from API 1`] = `
         key="bag03.jpg"
       >
         <div
-          style={
-            Object {
-              "height": "auto",
-              "margin": "20px",
-              "width": "300px",
-            }
-          }
+          className="flexItem"
         >
           <WithStyles(Paper)>
             <Paper
@@ -1997,12 +1937,8 @@ exports[`renders images from API 1`] = `
               >
                 <img
                   alt=""
+                  className="image"
                   src="http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/bag03.jpg"
-                  style={
-                    Object {
-                      "maxWidth": "240px",
-                    }
-                  }
                 />
                 <WithStyles(Typography)
                   component="h2"
@@ -2141,15 +2077,8 @@ exports[`renders images from API 2`] = `
   <div>
     <img
       alt=""
+      className="previewImgStyle"
       src=""
-      style={
-        Object {
-          "margin": "20px",
-          "maxHeight": "100px",
-          "maxWidth": "150px",
-          "verticalAlign": "middle",
-        }
-      }
     />
     <WithStyles(Button)
       label="Upload Image"
@@ -2285,7 +2214,7 @@ exports[`renders images from API 2`] = `
     <WithStyles(FormControl)
       style={
         Object {
-          "margin": "30px",
+          "marginLeft": "30px",
           "minWidth": "200px",
         }
       }
@@ -2307,7 +2236,7 @@ exports[`renders images from API 2`] = `
         required={false}
         style={
           Object {
-            "margin": "30px",
+            "marginLeft": "30px",
             "minWidth": "200px",
           }
         }
@@ -2318,7 +2247,7 @@ exports[`renders images from API 2`] = `
           onFocus={[Function]}
           style={
             Object {
-              "margin": "30px",
+              "marginLeft": "30px",
               "minWidth": "200px",
             }
           }
@@ -3273,14 +3202,7 @@ exports[`renders images from API 2`] = `
       Note: demo data in 1: Dress, 3: Bag, 4: Shoes
     </div>
     <div
-      style={
-        Object {
-          "display": "flex",
-          "flexWrap": "wrap",
-          "margin": "50px auto",
-          "padding": "0px 50px",
-        }
-      }
+      className="flexContainer"
     >
       <FlexBox
         item={
@@ -3295,13 +3217,7 @@ exports[`renders images from API 2`] = `
         key="bag02.jpg"
       >
         <div
-          style={
-            Object {
-              "height": "auto",
-              "margin": "20px",
-              "width": "300px",
-            }
-          }
+          className="flexItem"
         >
           <WithStyles(Paper)>
             <Paper
@@ -3345,12 +3261,8 @@ exports[`renders images from API 2`] = `
               >
                 <img
                   alt=""
+                  className="image"
                   src="http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/bag02.jpg"
-                  style={
-                    Object {
-                      "maxWidth": "240px",
-                    }
-                  }
                 />
                 <WithStyles(Typography)
                   component="h2"
@@ -3492,13 +3404,7 @@ exports[`renders images from API 2`] = `
         key="bag05.jpg"
       >
         <div
-          style={
-            Object {
-              "height": "auto",
-              "margin": "20px",
-              "width": "300px",
-            }
-          }
+          className="flexItem"
         >
           <WithStyles(Paper)>
             <Paper
@@ -3542,12 +3448,8 @@ exports[`renders images from API 2`] = `
               >
                 <img
                   alt=""
+                  className="image"
                   src="http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/bag05.jpg"
-                  style={
-                    Object {
-                      "maxWidth": "240px",
-                    }
-                  }
                 />
                 <WithStyles(Typography)
                   component="h2"
@@ -3689,13 +3591,7 @@ exports[`renders images from API 2`] = `
         key="bag04.jpg"
       >
         <div
-          style={
-            Object {
-              "height": "auto",
-              "margin": "20px",
-              "width": "300px",
-            }
-          }
+          className="flexItem"
         >
           <WithStyles(Paper)>
             <Paper
@@ -3739,12 +3635,8 @@ exports[`renders images from API 2`] = `
               >
                 <img
                   alt=""
+                  className="image"
                   src="http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/bag04.jpg"
-                  style={
-                    Object {
-                      "maxWidth": "240px",
-                    }
-                  }
                 />
                 <WithStyles(Typography)
                   component="h2"
@@ -3886,13 +3778,7 @@ exports[`renders images from API 2`] = `
         key="bag01.jpg"
       >
         <div
-          style={
-            Object {
-              "height": "auto",
-              "margin": "20px",
-              "width": "300px",
-            }
-          }
+          className="flexItem"
         >
           <WithStyles(Paper)>
             <Paper
@@ -3936,12 +3822,8 @@ exports[`renders images from API 2`] = `
               >
                 <img
                   alt=""
+                  className="image"
                   src="http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/bag01.jpg"
-                  style={
-                    Object {
-                      "maxWidth": "240px",
-                    }
-                  }
                 />
                 <WithStyles(Typography)
                   component="h2"
@@ -4083,13 +3965,7 @@ exports[`renders images from API 2`] = `
         key="bag03.jpg"
       >
         <div
-          style={
-            Object {
-              "height": "auto",
-              "margin": "20px",
-              "width": "300px",
-            }
-          }
+          className="flexItem"
         >
           <WithStyles(Paper)>
             <Paper
@@ -4133,12 +4009,8 @@ exports[`renders images from API 2`] = `
               >
                 <img
                   alt=""
+                  className="image"
                   src="http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/bag03.jpg"
-                  style={
-                    Object {
-                      "maxWidth": "240px",
-                    }
-                  }
                 />
                 <WithStyles(Typography)
                   component="h2"
@@ -4277,15 +4149,8 @@ exports[`show default result of bag pictures 1`] = `
   <div>
     <img
       alt=""
+      className="previewImgStyle"
       src=""
-      style={
-        Object {
-          "margin": "20px",
-          "maxHeight": "100px",
-          "maxWidth": "150px",
-          "verticalAlign": "middle",
-        }
-      }
     />
     <WithStyles(Button)
       label="Upload Image"
@@ -4421,7 +4286,7 @@ exports[`show default result of bag pictures 1`] = `
     <WithStyles(FormControl)
       style={
         Object {
-          "margin": "30px",
+          "marginLeft": "30px",
           "minWidth": "200px",
         }
       }
@@ -4443,7 +4308,7 @@ exports[`show default result of bag pictures 1`] = `
         required={false}
         style={
           Object {
-            "margin": "30px",
+            "marginLeft": "30px",
             "minWidth": "200px",
           }
         }
@@ -4454,7 +4319,7 @@ exports[`show default result of bag pictures 1`] = `
           onFocus={[Function]}
           style={
             Object {
-              "margin": "30px",
+              "marginLeft": "30px",
               "minWidth": "200px",
             }
           }
@@ -5409,14 +5274,7 @@ exports[`show default result of bag pictures 1`] = `
       Note: demo data in 1: Dress, 3: Bag, 4: Shoes
     </div>
     <div
-      style={
-        Object {
-          "display": "flex",
-          "flexWrap": "wrap",
-          "margin": "50px auto",
-          "padding": "0px 50px",
-        }
-      }
+      className="flexContainer"
     >
       <FlexBox
         item={
@@ -5431,13 +5289,7 @@ exports[`show default result of bag pictures 1`] = `
         key="bag02.jpg"
       >
         <div
-          style={
-            Object {
-              "height": "auto",
-              "margin": "20px",
-              "width": "300px",
-            }
-          }
+          className="flexItem"
         >
           <WithStyles(Paper)>
             <Paper
@@ -5481,12 +5333,8 @@ exports[`show default result of bag pictures 1`] = `
               >
                 <img
                   alt=""
+                  className="image"
                   src="http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/bag02.jpg"
-                  style={
-                    Object {
-                      "maxWidth": "240px",
-                    }
-                  }
                 />
                 <WithStyles(Typography)
                   component="h2"
@@ -5628,13 +5476,7 @@ exports[`show default result of bag pictures 1`] = `
         key="bag05.jpg"
       >
         <div
-          style={
-            Object {
-              "height": "auto",
-              "margin": "20px",
-              "width": "300px",
-            }
-          }
+          className="flexItem"
         >
           <WithStyles(Paper)>
             <Paper
@@ -5678,12 +5520,8 @@ exports[`show default result of bag pictures 1`] = `
               >
                 <img
                   alt=""
+                  className="image"
                   src="http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/bag05.jpg"
-                  style={
-                    Object {
-                      "maxWidth": "240px",
-                    }
-                  }
                 />
                 <WithStyles(Typography)
                   component="h2"
@@ -5825,13 +5663,7 @@ exports[`show default result of bag pictures 1`] = `
         key="bag04.jpg"
       >
         <div
-          style={
-            Object {
-              "height": "auto",
-              "margin": "20px",
-              "width": "300px",
-            }
-          }
+          className="flexItem"
         >
           <WithStyles(Paper)>
             <Paper
@@ -5875,12 +5707,8 @@ exports[`show default result of bag pictures 1`] = `
               >
                 <img
                   alt=""
+                  className="image"
                   src="http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/bag04.jpg"
-                  style={
-                    Object {
-                      "maxWidth": "240px",
-                    }
-                  }
                 />
                 <WithStyles(Typography)
                   component="h2"
@@ -6022,13 +5850,7 @@ exports[`show default result of bag pictures 1`] = `
         key="bag01.jpg"
       >
         <div
-          style={
-            Object {
-              "height": "auto",
-              "margin": "20px",
-              "width": "300px",
-            }
-          }
+          className="flexItem"
         >
           <WithStyles(Paper)>
             <Paper
@@ -6072,12 +5894,8 @@ exports[`show default result of bag pictures 1`] = `
               >
                 <img
                   alt=""
+                  className="image"
                   src="http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/bag01.jpg"
-                  style={
-                    Object {
-                      "maxWidth": "240px",
-                    }
-                  }
                 />
                 <WithStyles(Typography)
                   component="h2"
@@ -6219,13 +6037,7 @@ exports[`show default result of bag pictures 1`] = `
         key="bag03.jpg"
       >
         <div
-          style={
-            Object {
-              "height": "auto",
-              "margin": "20px",
-              "width": "300px",
-            }
-          }
+          className="flexItem"
         >
           <WithStyles(Paper)>
             <Paper
@@ -6269,12 +6081,8 @@ exports[`show default result of bag pictures 1`] = `
               >
                 <img
                   alt=""
+                  className="image"
                   src="http://image-search-demo2.oss-ap-southeast-1.aliyuncs.com/image_search_pictures/bag03.jpg"
-                  style={
-                    Object {
-                      "maxWidth": "240px",
-                    }
-                  }
                 />
                 <WithStyles(Typography)
                   component="h2"
