@@ -9,11 +9,12 @@ import FormControl from '@material-ui/core/FormControl';
 import Info from '@material-ui/icons/Info';
 import Warning from '@material-ui/icons/Warning';
 import axios from 'axios';
-import constants from './Constants';
 import './ImageSearchDemo.css';
+import default_response from './__mocks__/default_response.json'
 
 const api_url = process.env.REACT_APP_API_URL;
 const oss_url = process.env.REACT_APP_OSS_URL;
+const allCategory = default_response.SearchItemResponse.picInfo.allCategory
 
 function FlexBox(props) {
   return (
@@ -60,7 +61,7 @@ class ImageSearchDemo extends Component {
         this.setState({
           error: {message: error.message},
           isLoaded: true,
-          items: constants.default_result.SearchItemResponse.auctions
+          items: default_response.SearchItemResponse.auctions
         });
       })
   }
@@ -121,12 +122,11 @@ class ImageSearchDemo extends Component {
           }
         }
       });
-    }).catch(err => {
-      console.log("ERR: Service Suspended");
-      console.log(err);
+    }).catch(error => {
+      console.log(error.message);
       this.setState((prevState, props) => {
         return {
-          error: {message: err.message}
+          error: {message: error.message}
         }
       });
     });
@@ -150,7 +150,7 @@ class ImageSearchDemo extends Component {
             <Select value={this.state.cat_id} onChange={this.catChangeHandler}
               inputProps={{name: 'cat_id', id: 'category-simple',}}>
               <MenuItem value="" key="0">Not Specified</MenuItem>
-              {constants.allCategory.map(item => (
+              {allCategory.map(item => (
                 <MenuItem value={item.id} key={item.id}>{item.id}: {item.name}</MenuItem>
               ))}
             </Select>

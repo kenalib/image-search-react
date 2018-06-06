@@ -2,10 +2,11 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import ImageSearchDemo from './ImageSearchDemo';
 import axios from 'axios';
-import constants from './Constants';
 import Paper from '@material-ui/core/Paper';
 import Warning from '@material-ui/icons/Warning';
 import Typography from '@material-ui/core/Typography';
+import default_response from './__mocks__/default_response.json'
+import shoes_response from './__mocks__/shoes_response.json'
 
 it('renders without crashing', () => {
   shallow(<ImageSearchDemo />);
@@ -20,13 +21,13 @@ it('renders loading message', () => {
 
 const axiosGetMock = () => {
   return new Promise((resolve, reject) => {
-    resolve({data: constants.default_result});
+    resolve({data: default_response});
   });
 }
 
 const axiosPostMock = () => {
   return new Promise((resolve, reject) => {
-    resolve({data: constants.shoes_search_result});
+    resolve({data: shoes_response});
   });
 }
 
