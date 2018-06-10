@@ -3,10 +3,15 @@
 
 Travis CI Status: [![Build Status](https://travis-ci.com/kenalib/image-search-react.svg?branch=master)](https://travis-ci.com/kenalib/image-search-react)
 
-## Sample page
 
-* http://image-search-demo3.oss-ap-northeast-1.aliyuncs.com/
-* (This is just UI for demo, the backend API service maybe suspended.)
+## Sample UI and code
+
+* UI Demo: http://image-search-demo3.oss-ap-northeast-1.aliyuncs.com/
+* Front End: https://github.com/kenalib/image-search-react
+* Back End: https://github.com/kenalib/image-search-java
+
+* CI status: https://travis-ci.com/kenalib/image-search-react
+* Test coverage report: https://kenalib.github.io/image-search-react/coverage/lcov-report/
 
 ## Get Started
 
@@ -21,16 +26,23 @@ Travis CI Status: [![Build Status](https://travis-ci.com/kenalib/image-search-re
 * refer https://code.visualstudio.com/docs/setup/mac
 * run `code .` to open the directory
 * `Tasks | Run Task | npm start` to start
+
+## Test and build
+
 * `Tasks | Run Task | npm test` to test
 * `Tasks | Run Task | npm test:coverage` to test with coverage
 * `open coverage/lcov-report/index.html` to see the coverage report
 * `Tasks | Run Task | npm build` to make build
-* Copy files in build directory to your server
-* refer `.travis.yml` to deploy automatically
+
+## Auto deploy using Travis CI
+
+* Status: https://travis-ci.com/kenalib/image-search-react
+* Test build deploy processes are automated on Travis CI.
+* see `.travis.yml` for detail setup
 
 ## Java API
 
-* Start Web API in advance by `mvn tomcat7:run`
+* Start web API in advance by `mvn tomcat7:run`
 * refer https://github.com/kenalib/image-search-java
 
 ## Troubleshooting
