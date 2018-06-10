@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1528623427875" clover="3.2.0">
-  <project timestamp="1528623427875" name="All files">
+<coverage generated="1528640660220" clover="3.2.0">
+  <project timestamp="1528640660220" name="All files">
     <metrics statements="45" coveredstatements="40" conditionals="17" coveredconditionals="15" methods="19" coveredmethods="16" elements="81" coveredelements="71" complexity="0" loc="45" ncloc="45" packages="1" files="3" classes="3">
       <file name="App.js" path="/Users/kenfujii/Documents/github/My-Repo/image-search-react/src/App.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -49,8 +49,8 @@
         <line num="137" count="18" type="cond" truecount="2" falsecount="0"/>
         <line num="138" count="5" type="stmt"/>
         <line num="140" count="13" type="stmt"/>
-        <line num="154" count="182" type="stmt"/>
-        <line num="183" count="65" type="stmt"/>
+        <line num="155" count="182" type="stmt"/>
+        <line num="188" count="65" type="stmt"/>
       </file>
       <file name="setupTests.js" path="/Users/kenfujii/Documents/github/My-Repo/image-search-react/src/setupTests.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
