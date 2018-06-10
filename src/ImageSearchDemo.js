@@ -140,12 +140,13 @@ class ImageSearchDemo extends Component {
       return (
         <div>
           <img src={this.state.imgSrc} alt="" className="previewImgStyle"/>
+          <br/>
 
           <Button variant="raised" label='Upload Image'>
             <input type="file" onChange={this.fileChangedHandler}/>
           </Button>
 
-          <FormControl style={{minWidth:"200px", marginLeft:"30px"}}>
+          <FormControl style={{minWidth:"200px", margin:"30px"}}>
             <InputLabel htmlFor="category-simple">Category</InputLabel>
             <Select value={this.state.cat_id} onChange={this.catChangeHandler}
               inputProps={{name: 'cat_id', id: 'category-simple',}}>
@@ -156,7 +157,10 @@ class ImageSearchDemo extends Component {
             </Select>
           </FormControl>
 
-          <div>Note: demo data in 1: Dress, 3: Bag, 4: Shoes</div>
+          <div className="note">
+            note: demo data is in<br/>
+            1: Dress, 3: Bag, 4: Shoes
+          </div>
 
           {error ?
             <pre>Error: {error.message}</pre>: ""
@@ -172,9 +176,10 @@ class ImageSearchDemo extends Component {
           }
 
           {!error && items && items.length === 0 ?
-            <div>
+            <div className="warningBox">
               <Warning className="warningStyle"/>
-              Found zero image. Please try different category.
+              Found zero image.<br/>
+              Please try different category.
             </div> : ""
           }
 

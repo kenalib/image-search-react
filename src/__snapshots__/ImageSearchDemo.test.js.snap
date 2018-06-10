@@ -8,6 +8,7 @@ exports[`renders images from API 1`] = `
       className="previewImgStyle"
       src=""
     />
+    <br />
     <WithStyles(Button)
       label="Upload Image"
       variant="raised"
@@ -142,7 +143,7 @@ exports[`renders images from API 1`] = `
     <WithStyles(FormControl)
       style={
         Object {
-          "marginLeft": "30px",
+          "margin": "30px",
           "minWidth": "200px",
         }
       }
@@ -164,7 +165,7 @@ exports[`renders images from API 1`] = `
         required={false}
         style={
           Object {
-            "marginLeft": "30px",
+            "margin": "30px",
             "minWidth": "200px",
           }
         }
@@ -175,7 +176,7 @@ exports[`renders images from API 1`] = `
           onFocus={[Function]}
           style={
             Object {
-              "marginLeft": "30px",
+              "margin": "30px",
               "minWidth": "200px",
             }
           }
@@ -1126,8 +1127,12 @@ exports[`renders images from API 1`] = `
         </div>
       </FormControl>
     </WithStyles(FormControl)>
-    <div>
-      Note: demo data in 1: Dress, 3: Bag, 4: Shoes
+    <div
+      className="note"
+    >
+      note: demo data is in
+      <br />
+      1: Dress, 3: Bag, 4: Shoes
     </div>
     <div
       className="flexContainer"
@@ -2080,6 +2085,7 @@ exports[`renders images from API 2`] = `
       className="previewImgStyle"
       src=""
     />
+    <br />
     <WithStyles(Button)
       label="Upload Image"
       variant="raised"
@@ -2214,7 +2220,7 @@ exports[`renders images from API 2`] = `
     <WithStyles(FormControl)
       style={
         Object {
-          "marginLeft": "30px",
+          "margin": "30px",
           "minWidth": "200px",
         }
       }
@@ -2236,7 +2242,7 @@ exports[`renders images from API 2`] = `
         required={false}
         style={
           Object {
-            "marginLeft": "30px",
+            "margin": "30px",
             "minWidth": "200px",
           }
         }
@@ -2247,7 +2253,7 @@ exports[`renders images from API 2`] = `
           onFocus={[Function]}
           style={
             Object {
-              "marginLeft": "30px",
+              "margin": "30px",
               "minWidth": "200px",
             }
           }
@@ -3198,8 +3204,12 @@ exports[`renders images from API 2`] = `
         </div>
       </FormControl>
     </WithStyles(FormControl)>
-    <div>
-      Note: demo data in 1: Dress, 3: Bag, 4: Shoes
+    <div
+      className="note"
+    >
+      note: demo data is in
+      <br />
+      1: Dress, 3: Bag, 4: Shoes
     </div>
     <div
       className="flexContainer"
@@ -4152,6 +4162,7 @@ exports[`show default result of bag pictures 1`] = `
       className="previewImgStyle"
       src=""
     />
+    <br />
     <WithStyles(Button)
       label="Upload Image"
       variant="raised"
@@ -4286,7 +4297,7 @@ exports[`show default result of bag pictures 1`] = `
     <WithStyles(FormControl)
       style={
         Object {
-          "marginLeft": "30px",
+          "margin": "30px",
           "minWidth": "200px",
         }
       }
@@ -4308,7 +4319,7 @@ exports[`show default result of bag pictures 1`] = `
         required={false}
         style={
           Object {
-            "marginLeft": "30px",
+            "margin": "30px",
             "minWidth": "200px",
           }
         }
@@ -4319,7 +4330,7 @@ exports[`show default result of bag pictures 1`] = `
           onFocus={[Function]}
           style={
             Object {
-              "marginLeft": "30px",
+              "margin": "30px",
               "minWidth": "200px",
             }
           }
@@ -5270,8 +5281,12 @@ exports[`show default result of bag pictures 1`] = `
         </div>
       </FormControl>
     </WithStyles(FormControl)>
-    <div>
-      Note: demo data in 1: Dress, 3: Bag, 4: Shoes
+    <div
+      className="note"
+    >
+      note: demo data is in
+      <br />
+      1: Dress, 3: Bag, 4: Shoes
     </div>
     <div
       className="flexContainer"

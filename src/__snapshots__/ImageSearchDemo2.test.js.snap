@@ -7,6 +7,7 @@ exports[`BookList snapshot test 1`] = `
     className="previewImgStyle"
     src=""
   />
+  <br />
   <WithStyles(Button)
     label="Upload Image"
     variant="raised"
@@ -19,7 +20,7 @@ exports[`BookList snapshot test 1`] = `
   <WithStyles(FormControl)
     style={
       Object {
-        "marginLeft": "30px",
+        "margin": "30px",
         "minWidth": "200px",
       }
     }
@@ -159,8 +160,12 @@ exports[`BookList snapshot test 1`] = `
       </WithStyles(MenuItem)>
     </WithStyles(Select)>
   </WithStyles(FormControl)>
-  <div>
-    Note: demo data in 1: Dress, 3: Bag, 4: Shoes
+  <div
+    className="note"
+  >
+    note: demo data is in
+    <br />
+    1: Dress, 3: Bag, 4: Shoes
   </div>
   <div
     className="flexContainer"
@@ -236,6 +241,7 @@ exports[`BookList snapshot test 2`] = `
     className="previewImgStyle"
     src="data:text/plain;charset=undefined,dummy"
   />
+  <br />
   <WithStyles(Button)
     label="Upload Image"
     variant="raised"
@@ -248,7 +254,7 @@ exports[`BookList snapshot test 2`] = `
   <WithStyles(FormControl)
     style={
       Object {
-        "marginLeft": "30px",
+        "margin": "30px",
         "minWidth": "200px",
       }
     }
@@ -388,8 +394,12 @@ exports[`BookList snapshot test 2`] = `
       </WithStyles(MenuItem)>
     </WithStyles(Select)>
   </WithStyles(FormControl)>
-  <div>
-    Note: demo data in 1: Dress, 3: Bag, 4: Shoes
+  <div
+    className="note"
+  >
+    note: demo data is in
+    <br />
+    1: Dress, 3: Bag, 4: Shoes
   </div>
   <pre>
     Error: 

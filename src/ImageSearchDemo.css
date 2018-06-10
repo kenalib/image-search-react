@@ -3,16 +3,19 @@
   display: flex;
   flex-wrap: wrap;
   margin: 50px auto;
-  padding: 0px 50px;
+  padding: 0px 30px;
+  justify-content: center;
 }
 
 .flexItem {
   width: 300px;
+  max-width: 80%;
   height: auto;
-  margin: 20px;
+  margin: 30px;
 }
 
 .image {
+  width: 80%;
   max-width: 240px;
   margin: 20px;
 }
@@ -24,12 +27,20 @@
   vertical-align: middle;
 }
 
-infoStyle {
+.note {
+  color: gray;
+}
+
+.infoStyle {
   color: deepskyblue;
   margin-right: 5px;
 }
 
-warningStyle {
+.warningStyle {
   color: orange;
   margin-right: 5px;
+}
+
+.warningBox {
+  margin: 20px;
 }

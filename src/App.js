@@ -15,13 +15,15 @@ class App extends Component {
         <ImageSearchDemo/>
 
         <p className="App-intro">
-          Plase refer the documents for more details.<br/>
+          Please refer<br/>
           <code>
             <a href="https://www.alibabacloud.com/product/imagesearch"
               target="_blank" rel="noopener noreferrer">
-              https://www.alibabacloud.com/product/imagesearch
+              Image Search Document
             </a>
           </code>
+          <br/>
+          for more details.
         </p>
       </div>
     );
