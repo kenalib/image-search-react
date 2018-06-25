@@ -49,10 +49,21 @@ class ImageSearchDemo extends Component {
   componentDidMount() {
     axios.get(api_url, { timeout : 3000 })
       .then((response) => {
-        this.setState({
-          error: null,
-          isLoaded: true,
-          items: response.data.SearchItemResponse.auctions
+        const res = response.data.SearchItemResponse;
+        this.setState((prevState, props) => {
+          if (res.success) {
+            return {
+              error: null,
+              isLoaded: true,
+              items: res.auctions
+            };
+          } else {
+            return {
+              error: {message: res.message},
+              isLoaded: true,
+              items: default_response.SearchItemResponse.auctions
+            }
+          }
         });
       })
       .catch((error) => {
